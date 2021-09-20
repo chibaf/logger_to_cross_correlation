@@ -44,9 +44,10 @@ void loop() {
   Serial.print(a[29]);
   Serial.print(",");
   Serial.print(b[29]);
+  Serial.print(",");
   Serial.print("0.0");
   Serial.print(",");
-   Serial.print("0.0");
+  Serial.print("0.0");
   Serial.print(",");
   Serial.print("0.0");
   Serial.print(",");
