@@ -33,7 +33,7 @@ while True:
 	    corr=np.empty(0)   #make nd.array of length zero
 	    corr=np.append(corr,np.dot(d1,d2)*c)  # the first element of corr, modified on 16.Sep.2021
 	    for i in range(len(d1)):
-	      d2=np.roll(d2,-1)  # shift 1 to the left
+	      d2=np.roll(d2,1)  # shift 1 to the left
 	      corr=np.append(corr,np.dot(d1,d2)*c)   # cross correlation, modified on 16.Sep.2021
 	    mx=np.amax(corr)
 	    print(mx)
